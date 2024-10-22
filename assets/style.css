@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.banner {
+  background-image: linear-gradient(rgb(131, 48, 124), rgba(252, 42, 182, 0.3), rgb(131, 48, 124));
+  height: 800px;
+  padding-top: 60px;
+  border-bottom: 1px solid #d533db80;
+}
+
+.banner .banner-content {
+  color: white;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: transparent;
+  background: -webkit-linear-gradient(#ffffff, #d1ecff);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.banner .FT {
+  background-color: rgba(0, 0, 0, .2);
+  height: 260px;
+  width: 260px;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.banner .FT img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin: 16px 0 24px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+  .banner {
+    height: 700px;
+  }
+
+  .banner .banner-content {
+    width: 500px;
+  }
+
+  .banner h1 {
+    font-size: 2rem; /* Diminui o tamanho da fonte em telas menores */
+  }
+
+  .banner .FT {
+    height: 220px;
+    width: 220px;
+  }
+
+  .banner p {
+    font-size: 1.1rem; /* Ajuste do tamanho do texto */
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 600px;
+  }
+
+  .banner .banner-content {
+    width: 400px;
+  }
+
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner .FT {
+    height: 180px;
+    width: 180px;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 500px;
+  }
+
+  .banner .banner-content {
+    width: 90%;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner .FT {
+    height: 140px;
+    width: 140px;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+}
